@@ -1,0 +1,133 @@
+.login-page {
+  background-color: #28a745; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Styling untuk card login yang lebih kecil */
+.login-page .card {
+  max-width: 340px; 
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem; 
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* Header card login */
+.login-page .card h1 {
+  font-size: 1.8rem; 
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Input fields */
+.login-page input.form-control {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Hover efek input */
+.login-page input.form-control:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Tombol Login */
+.login-page button.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-page button.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Link Register */
+.login-page a.text-success {
+  text-decoration: none;
+  color: #28a745;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.login-page a.text-success:hover {
+  color: #155724;
+}
+
+/* Styling untuk Toast Notifications */
+.login-page .toast-success .toast-header {
+  background: linear-gradient(90deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.login-page .toast-success .toast-body {
+  background: #d4edda;
+  border-radius: 5px;
+  color: #155724;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-page .toast-success {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+/* Error Toast */
+.login-page .toast-error .toast-header {
+  background: linear-gradient(90deg, #dc3545, #c82333);
+  color: white;
+}
+
+.login-page .toast-error .toast-body {
+  background: #f8d7da;
+  border-radius: 5px;
+  color: #721c24;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-page .toast-error {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

@@ -1,0 +1,27 @@
+          .toast-success .toast-header {
+            background: linear-gradient(90deg, #28a745, #1e7e34);
+            color: white;
+          }
+          .toast-success .toast-body {
+            background: #d4edda;
+            border-radius: 5px;
+            color: #155724;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+          }
+          @keyframes slide-in {
+            from {
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          .toast-success {
+            animation: slide-in 0.5s ease-in-out;
+          }
+        
+      

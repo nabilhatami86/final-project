@@ -1,0 +1,163 @@
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f8f9fa; /* Warna latar belakang yang lebih ringan */
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar-brand-img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand-img:hover {
+    transform: scale(1.05);
+}
+
+/* Breadcrumb */
+.breadcrumb-container {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: #218838;
+}
+
+.breadcrumb .active {
+    color: #6c757d;
+    font-weight: normal;
+}
+
+/* Search Bar */
+.form-control {
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Auth Buttons */
+button {
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button.btn-success {
+    border-radius: 25px;
+    background-color: #28a745;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Shopping Cart Badge */
+.cart-badge {
+    background-color: #dc3545;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+/* User Profile Dropdown */
+.user-profile-card {
+    width: 250px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.user-profile-card strong {
+    color: #28a745;
+}
+
+.user-profile-card p {
+    margin: 0;
+    color: #495057;
+    font-size: 14px;
+}
+
+.user-profile-card .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.user-profile-card .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .navbar-brand-img {
+        max-width: 100px;
+    }
+
+    .breadcrumb-container {
+        padding-left: 0;
+    }
+
+    .form-control {
+        margin: 10px 0;
+    }
+
+    .user-profile-card {
+        width: 100%;
+    }
+
+    .btn-success {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .cart-badge {
+        top: -3px;
+        right: -5px;
+        font-size: 10px;
+        min-width: 16px;
+        min-height: 16px;
+    }
+}

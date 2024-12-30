@@ -1,0 +1,180 @@
+.container {
+    margin-top: 20px;
+    padding: 30px;
+  }
+  
+  /* Styling untuk heading */
+  h1.fs-4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+/* Styling untuk Container */
+.container {
+  margin-top: 20px;
+  padding: 30px;
+}
+
+/* Styling untuk heading */
+h1.fs-4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Styling untuk tabel keranjang */
+.table {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  table-layout: fixed; /* Menjamin tabel teratur */
+}
+
+.table th,
+.table td {
+  padding: 10px 15px;
+  text-align: center;
+  vertical-align: middle; /* Menjaga konten tetap sejajar secara vertikal */
+}
+
+.table th {
+  background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.table .btn {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* Styling untuk checkbox */
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-left: 5px;
+}
+
+/* Styling untuk Cart Item */
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.cart-item button.btn-sm {
+  padding: 8px 12px;
+}
+
+/* Styling untuk Cart Summary */
+.cart-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h5 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk tombol checkout */
+.cart-summary .btn-success {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Kolom untuk Cart Summary */
+.col-md-4 {
+  margin-top: 20px;
+}
+
+/* Tabel Keranjang Responsif */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 10px;
+  }
+
+  .col-md-4 {
+    margin-top: 30px;
+  }
+}
+
+/* Styling untuk tombol aksi pada CartItem */
+.cart-item button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.cart-item button.btn-sm {
+  padding: 8px 12px;
+}
+
+/* Styling untuk Empty Cart Container */
+.empty-cart-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.empty-cart-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.empty-cart-container p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.empty-cart-container .btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.empty-cart-container .btn:hover {
+  background-color: #218838;
+}
+
+/* Styling untuk Cart Item Button */
+.cart-item button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Styling untuk Cart Item Checkbox */
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-left: 5px;
+}
